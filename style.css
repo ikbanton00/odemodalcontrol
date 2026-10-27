@@ -1,0 +1,150 @@
+  html, body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            min-height: 800px;
+        }
+
+        .login_bg_full {
+            min-width: 1000px;
+        }
+
+        .login_bg_full .content {
+            height : auto;
+            font-size : 0;
+            background-image: none;
+            overflow : hidden;
+            min-height: 560px;
+            max-height: calc(100vh - 124px);
+        }
+
+        .content_inner .login_pannel {
+            right: 3px;
+            top: 17px;
+            bottom: 52px;
+            border-radius: 8px;
+            width: 380px;
+            height: 466px;
+        }
+        .content_inner .login_pannel .login_pannel_bg {
+            border-radius: 8px;
+        }
+
+        .content_inner .login_pannel .login_pannel_iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            padding: 0;
+            margin: 0;
+            position: relative;
+            zoom: 1;
+            z-index: 10;
+            border-radius: 8px;
+            box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.16);
+        }
+
+        .login_bg_full .login_pannel {
+            top : 80px;
+            height: 400px;
+        }
+
+        .login_bg_full .login_welcome {
+            top : 50%;
+            margin-top : -150px;
+        }
+
+        .login_bg_full .footer {
+            position : relative;
+            right : 0;
+            left : 0;
+            width : auto;
+            padding-top: 16px;
+        }
+
+        .header .links_item {
+            border: 0 none;
+            padding: 0;
+        }
+
+        .header .links_item:before {
+            content: "";
+            display: inline-block;
+            width: 1px;
+            height: 12px;
+            background-color: #dcdcdc;
+            vertical-align: middle;
+            margin-top: -8px;
+        }
+
+        .header .language_select
+         {
+            border: unset;
+            font-size: 12px;
+            color: #848585;
+            outline: none;
+            padding: 0 12px 0 8px;
+        }
+        .header .language_select:before{
+            content: "";
+            display: inline-block;
+            width: 1px;
+            height: 12px;
+            background-color: #dcdcdc;
+            vertical-align: middle;
+            margin-top: -8px;
+        }
+        .select_width_reference {
+            visibility: hidden;
+            white-space: nowrap;
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+            font-size: 12px;
+        }
+        .header .links_item_first:before {
+            background-color: transparent;
+        }
+
+        .header .logo {
+            left: 0;
+        }
+
+        .content_inner .login_company_desc {
+            left: 0;
+            top: 80px;
+        }
+
+        .login_bg_full .content_inner {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: -500px;
+        }
+
+        .header .links_wrap {
+            font-size: 0;
+            bottom: 14px;
+            right: 0;
+        }
+
+        .links_item a {
+            font-size: 12px;
+            padding: 0 12px;
+        }
+
+        .login_bg_full #page {
+            height: 100%;
+            position: relative;
+        }
+
+        .login_full_image {
+            width: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        .alimail-seo{
+            display:none;
+        }
